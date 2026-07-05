@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Sound System</title>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <a href="#">Home</a>
+    <a href="#profil">Profil</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#paket">Paket</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Booking</a>
+</nav>
+
+<!-- HEADER -->
+<header>
+
+<h1>PASCAUDIO SOUND SYSTEM</h1>
+<h1>X</h1>
+<h1>FANA.ART</h1>
+
+<p>
+Sound System • Decoration • Event Organizer
+</p>
+
+</header>
+
+<!-- PROFIL -->
+<section id="profil">
+
+<h2>Profil Kami</h2>
+
+<p>
+
+Kami menyediakan jasa Rental Sound System, Dekorasi, dan Event Organizer untuk berbagai jenis acara seperti hajatan, pernikahan, konser, live music, seminar, pengajian, dan acara lainnya.
+
+Dengan pengalaman, peralatan berkualitas serta tim profesional, kami siap memberikan pelayanan terbaik untuk kesuksesan acara Anda.
+
+</p>
+
+</section>
+
+<!-- LAYANAN -->
+<section id="layanan">
+
+<h2>Layanan Kami</h2>
+<div class="container-card">
+<div class="card">
+<h3>🔊 Rental Sound System</h3>
+<p>Sound system berkualitas
+  
+untuk acara kecil maupun besar.</p>
+<a href="#">Selengkapnya →</a>
+</div>
+
+<div class="card">
+<h3>🎉 Decoration</h3>
+<p>Dekorasi pelaminan, ulang tahun, gathering dan berbagai konsep acara.</p>
+<a href="#">Selengkapnya →</a>
+</div>
+
+<div class="card">
+<h3>🎤 Event Organizer</h3>
+<p>Membantu jalannya acara agar lebih rapi dan profesional.</p>
+<a href="#">Selengkapnya →</a>
+</div>
+
+</>
+
+</section>
+
+
+<!-- KEUNGGULAN -->
+<section id="keunggulan">
+
+<h2>Kenapa Memilih Kami?</h2>
+
+<div class="card">
+
+<h3>✅ Sound Berkualitas</h3>
+
+<p>Peralatan selalu dirawat dan menghasilkan 
+
+</section>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h2>
+
+Siap Melayani Acara Anda
+
+</h2>
+
+<p>
+
+Percayakan kebutuhan Sound System, Decoration dan Event Organizer kepada kami.
+
+</p>
+
+<a href="#kontak" class="btn">
+
+Booking Sekarang
+
+</a>
+
+</section>
+<!-- PAKET -->
+<section id="paket">
+
+<h2>Paket Rental</h2>
+<div class="container-card">
+<div class="card">
+<h3>Paket Hajatan</h3>
+<p>Speaker + Mixer + 2 Mic + Operator</p>
+<a class="btn" href="https://wa.me/6285784269794?text=Saya%20ingin%20booking%20Paket%20Hajatan" target="_blank">
+Pesan Sekarang
+</a>
+</div>
+
+<div class="card">
+<h3>Paket Wedding</h3>
+<p>Full Sound System + Decoration</p>
+<a class="btn" href="https://wa.me/6285784269794?text=Saya%20ingin%20booking%20Paket%20Wedding" target="_blank">
+Pesan Sekarang
+</a>
+</div>
+
+<div class="card">
+<h3>Paket Live Music</h3>
+<p>Sound Profesional + Mixer Digital</p>
+<a class="btn" href="https://wa.me/6285784269794?text=Saya%20ingin%20booking%20Paket%20Live%20Music" target="_blank">
+Pesan Sekarang
+</a>
+</div>
+
+</section>
+
+<!-- GALERI -->
+<section id="galeri">
+
+<h2>Galeri Kami</h2>
+
+<div class="gal">
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox" onclick="tutupGambar()">
+    <img id="lightbox-img" src="" alt="">
+</div>
+
+<img src="img/foto1.jpg" alt="Galeri 1">
+
+<img src="img/foto2.jpg" alt="Galeri 2">
+
+<img src="img/foto3.jpg" alt="Galeri 3">
+
+<img src="img/foto4.jpg" alt="Galeri 4">
+
+<img src="img/foto5.jpg" alt="Galeri 5">
+
+<img src="img/foto6.jpg" alt="Galeri 6">
+
+</div>
+
+</section>
+
+<!-- BOOKING -->
+<section id="kontak">
+    <h2>Booking / Pemesanan</h2>
+
+    <form id="formBooking" onsubmit="sendWA(); return false;">
+        <input type="text" name="nama" placeholder="Nama Anda" required>
+
+        <input type="text" name="wa" placeholder="Nomor WhatsApp" required>
+
+        <input type="text" name="alamat" placeholder="Alamat Acara" required>
+
+        <input type="date" name="tanggal" required>
+
+        <textarea name="catatan" placeholder="Catatan (paket, jam, dll)"></textarea>
+
+        <button type="submit" class="btn">
+            Kirim Booking
+        </button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Rental Sound System</h3>
+
+    <p>📞 0857-8426-9794</p>
+
+    <p>📍 Pp.Darul Falah Amtsilati Pusat</p>
+
+    <p>© 2026 Rental Sound System. All Rights Reserved.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function sendWA(){
+
+    let form = document.getElementById("formBooking");
+
+    let nama = form.nama.value;
+    let wa = form.wa.value;
+    let alamat = form.alamat.value;
+    let tanggal = form.tanggal.value;
+    let catatan = form.catatan.value;
+
+    if(!/^[0-9]+$/.test(wa) || wa.length < 10){
+        alert("Nomor WhatsApp tidak valid!");
+        return;
+    }
+
+    let pesan = encodeURIComponent(
+        "📌 BOOKING SOUND SYSTEM\n\n"+
+        "👤 Nama : "+nama+"\n"+
+        "📱 WA : "+wa+"\n"+
+        "📍 Alamat : "+alamat+"\n"+
+        "📅 Tanggal : "+tanggal+"\n"+
+        "📝 Catatan : "+catatan
+    );
+
+    window.open(
+        "https://wa.me/6285784269794?text="+pesan,
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
